@@ -64,5 +64,9 @@ module SampleApp
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+
+    # this test verifies that calling Micropost.new with a nonempty user_id raises a mass assignment error exception
+    config.active_record.whitelist_attributes = true  
   end
 end
